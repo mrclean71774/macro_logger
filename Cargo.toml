@@ -1,0 +1,15 @@
+[package]
+name = "macro_logger"
+version = "0.1.0"
+authors = ["Michael Phillips <mrclean71774@gmail.com>"]
+edition = "2018"
+
+
+[features]
+default = []
+
+error = []
+warning = ["error"]
+info = ["warning", "error"]
+debug = ["info", "warning", "error"]
+trace = ["debug", "info", "warning", "error"]
